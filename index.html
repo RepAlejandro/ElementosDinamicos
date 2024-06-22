@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Servicio de Plomeria</title>
+    <link href="estilos.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar bg-body-tertiary fixed-top border">
+        <div class="container-fluid">
+            <a class="navbar-brand fs-5"> <img src="img/logo.png" alt="logo" width="50px" height="35px"> Plomer OS</a>
+            <form class="d-flex" role="search">
+            <input class="form-control me-2 fs-6" type="search" placeholder="Search" aria-label="Search">
+            </form>
+        </div>
+        </nav>
+    </header>
+    <br>
+    <section class="container px-4 mt-5" id="servicios">
+        <h1 class="d-flex justify-content-center align-items-center mt-5 fs-2" > <span class="badge bg-custom rounded-pill fs-2" style="width:350px">Servicios</span></h1>
+        <div class="container mt-5">
+            <img src="img/plomeroIA.png" class="rounded float-start me-5" style="width: 100%; max-width: 550px;">
+            <p class="fs-5 mt-5 fw-bold">Servicios de Plomeros Expertos</p>
+            <p class="fs-5 mt-5">Ofrecemos servicios de plomería para hogares, negocios y propiedades industriales.</p>
+            <p class="fs-5 mt-5 fw-bold">Reparaciones de Fugas</p>
+            <p class="fs-5 mt-5">Detectamos y reparamos fugas de agua rápidamente para evitar daños mayores.</p>
+        </div>
+    </section>
+    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+        <button id="arriba" class="btn btn-dark me-md-5 rounded-pill" type="button">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-up" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708z"/>
+          </svg></button>
+        </div>
+    <br><br><br><br>
+    <div class="container mt-5">
+        <div class="row row-cols-1 row-cols-sm-2 g-4 mt-5">
+            <div class="col">
+                <div class="card h-100 bg-secondary bg-opacity-50 text-white">
+                    <img src="img/herramientas.png" class="card-img-top img-fluid w-50 mx-auto d-block" alt="Herramientas">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Herramientas</h5>
+                        <div class="dropdown-container position-relative d-inline-block">
+                            <button class="btn btn-primary cambiarBtn small-btn badge bg-custom rounded-pill fs-6" id="btn-herramientas">Mostrar Información</button>
+                            <div class="dropdown-menu p-4 text-muted" id="texto-herramientas" style="max-width: 200px;">
+                                <p>Descripción: Herramientas para instalación y reparación.</p>
+                                <p>Productos: Llaves inglesas, cortadores de tubos, desatascadores.</p>
+                            </div>
+                        </div>
+                    </div>                        
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 bg-secondary bg-opacity-50 text-white">
+                    <img src="img/cocina.png" class="card-img-top img-fluid w-50 mx-auto d-block" alt="Cocina">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Cocina</h5>
+                        <div class="dropdown-container position-relative d-inline-block">
+                            <button class="btn btn-primary cambiarBtn small-btn badge bg-custom rounded-pill fs-6" id="btn-cocina">Mostrar Información</button>
+                            <div class="dropdown-menu p-4 text-muted" id="texto-cocina" style="max-width: 200px;">
+                                <p>Descripción: Artículos y accesorios de cocina.</p>
+                                <p>Productos: Ollas, sartenes, utensilios de cocina.</p>
+                            </div>
+                        </div>
+                    </div>                        
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 bg-secondary bg-opacity-50 text-white">
+                    <img src="img/filtracion.png" class="card-img-top img-fluid w-50 mx-auto d-block" alt="Filtración">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Filtración</h5>
+                        <div class="dropdown-container position-relative d-inline-block">
+                            <button class="btn btn-primary cambiarBtn small-btn badge bg-custom rounded-pill fs-6" id="btn-filtracion">Mostrar Información</button>
+                            <div class="dropdown-menu p-4 text-muted" id="texto-filtracion" style="max-width: 200px;">
+                                <p>Descripción: Sistema de filtración para agua.</p>
+                                <p>Productos: Filtros de carbón, filtros de sedimentos, sistemas de ósmosis inversa.</p>
+                            </div>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 bg-secondary bg-opacity-50 text-white">
+                    <img src="img/sellado.png" class="card-img-top img-fluid w-50 mx-auto d-block" alt="Sellado">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Sellado</h5>
+                        <div class="dropdown-container position-relative d-inline-block">
+                            <button class="btn btn-primary cambiarBtn small-btn badge bg-custom rounded-pill fs-6" id="btn-sellado">Mostrar Información</button>
+                            <div class="dropdown-menu p-4 text-muted" id="texto-sellado" style="max-width: 200px;">
+                                <p>Descripción: Productos para sellado.</p>
+                                <p>Productos: Selladores de silicona, cintas de sellado.</p>
+                            </div>
+                        </div>    
+                    </div>                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <section class="container px-4 mt-5 d-flex justify-content-center align-items-center" id="promos"> 
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-info btn-custom rounded-pill fs-6" data-bs-toggle="modal" id="abrirmodal">
+            <h3 class="fs-6">Mira las promos!!!</h3>
+        </button>
+    
+        <!-- Modal -->
+        <div class="modal fade" id="promodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header" style="background-color:#84A6CD;">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Promociones</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <ul>
+                          <li>"Compra más, ahorra más: 10% de descuento en pedidos superiores a $200 en Desagües, espejos y estantes."</li>
+                          <li>"Kit de instalación de baño completo por solo $150: incluye grifo, válvula y mangueras."</li>
+                          <li>"Instalación gratuita con la compra de cualquier calentador de agua en nuestra tienda."</li>
+                          <li>"¡Comparte tu experiencia con amigos! Ambos reciben un cupón del 10% de descuento en su próxima compra por cada referido."</li>
+                          
+
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <br><br><br>
+        <section class="container px-4 mt-5" id="nosotros">
+          <h1 class="d-flex justify-content-center align-items-center mt-5 fs-2" > <span class="badge bg-custom rounded-pill fs-2" style="width:350px">Sobre Nosotros</span></h1>
+          <div class="container d-flex justify-content-between mx-auto" style="margin-left: 130px;" >
+            <p class="fs-5 me-5">En Plomeros Expertos, ofrecemos una amplia gama de servicios de plomería diseñados para satisfacer todas las necesidades de nuestros clientes, ya sea en hogares residenciales, negocios comerciales o propiedades industriales</p>
+            <p class="fs-5">Nuestro equipo de plomeros altamente capacitados y certificados está listo para abordar cualquier desafío que se nos presente con experiencia y habilidad. Reparaciones de Fugas: ¿Notó una mancha de agua en el techo o en la pared? ¡No lo ignore! Nuestros expertos en detección y reparación de fugas están aquí para ayudarle a localizar y reparar fugas de agua de manera rápida y eficiente, evitando daños mayores a su propiedad. </p>
+          </div>
+        </section>
+        <br>
+
+        <div class="d-grid gap-2 col-2 mx-auto mt-5 align-items-center">
+          <button class="btn btn-info btn-custom rounded-pill fs-6" type="button"><h3 class="fs-6">Conoce más</h3></button>
+        </div>
+        <footer class="mt-5 fixed-footer" id="contacto">
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3 ">
+              <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary fs-6">Inicio</a></li>
+              <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary fs-6">Features</a></li>
+              <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary fs-6">Precios</a></li>
+              <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary fs-6">PyR</a></li>
+              <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary fs-6">Nosotros</a></li>
+            </ul>
+            <p class="text-center text-body-secondary fs-6">© 2024 Company, Inc</p>
+        </footer>        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <script src="script.js"></script>
+</body> 
+</html>

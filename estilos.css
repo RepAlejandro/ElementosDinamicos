@@ -1,0 +1,30 @@
+body {
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+/*color no encontrado con bootstrap*/
+.bg-custom {
+    background-color: #8BBBD6;
+    color: white; 
+}
+/*cambiar el tamaño de des imagenes no encontrado solo hacerlo con bootstrap*/
+.card-img-top {
+    height: 150px;
+    object-fit:scale-down;
+} 
+
+/*Estilos para el texto al presionar el botón, no encontré como hacerlo solo con bootstrap*/
+.dropdown-menu.show {
+    display: block;
+}
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    bottom: 100%; 
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 10px; 
+}
+.dropdown-container {
+    position: relative; 
+    display: inline-block;
+}
