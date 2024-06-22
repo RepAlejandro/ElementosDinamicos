@@ -26,8 +26,12 @@ window.addEventListener('scroll', function() {
     // Muestra el botón "Volver arriba" después de desplazarse 200px
     if (scrollPosition > 200) {
         backToTopBtn.style.opacity = "1";
+        backToTopBtn.style.display = "block";
     } else {
         backToTopBtn.style.opacity = "0";
+        setTimeout(() => {
+            backToTopBtn.style.display = "none";
+        }, 500); // Coincide con la transición de opacidad
     }
 });
 
@@ -35,6 +39,7 @@ window.addEventListener('scroll', function() {
 backToTopBtn.addEventListener('click', function() {
     window.scrollTo({top: 0, behavior: 'smooth'});
 });
+
 
 
 
